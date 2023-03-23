@@ -7,13 +7,14 @@ Notification:Notify(
 )
 wait(1)
 Notification:Notify(
-    {Title = "Lyno | Custom VAPE Script |Script Loaded !", Description = "Lyno But Doors !"},
+    {Title = "Lyno | Custom VAPE Script |Script Loaded !", Description = "Lyno But All Games"},
     {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 10, Type = "option"},
     {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84), Callback = function(State) print(tostring(State)) end}
 )
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Lyno | All Games", "LightTheme")
 local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
 Section:NewButton("KeyBoard GUI ( For Mobile )", "KeyBoard Free Scirpt UNPATCHED", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/mob.txt"))
 end)
